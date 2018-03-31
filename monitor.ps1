@@ -1,20 +1,21 @@
-# Change these as needed
+# ===== Change these as needed =====
 $logFileDir = "C:\local\var\tmp\test"
-#$logFilePattern = "SystemOut*.log"
 $logFilePattern = "trace*.log"
+#$logFilePattern = "SystemOut*.log"
 $progressFile = "C:\local\var\tmp\test\progress.txt"
 $matchString = "SECJ0373E"
 $smtpServer	= "smtp.notes.na.collabserv.com"
 $recipientAddress = "chads@us.ibm.com"
 $senderAddress = "cs-alerts@us.ibm.com"
 $subject = "New alert at "
-$body = $null
 $debug = $false
-# Don't change these
+
+# ===== Don't change these =====
 $lastTimestampProcessed	= $null
 $timestampRegex	= "([1-9]|1[012])/([0-9]|1[0-9]|2[0-9]|3[01])/([0-9][0-9]) ([0-9]|1[0-9]|2[01234]):([012345][0-9]):([012345][0-9]):([0-9][0-9][0-9])"
 $timeFormat	= "M/d/yy H:mm:ss:fff"
 $sendEmail = $false
+$body = $null
 
 function log {
     param([string]$text)
